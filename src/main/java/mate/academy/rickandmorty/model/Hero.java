@@ -17,7 +17,7 @@ import lombok.ToString;
 public class Hero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private Long externalId;
     private String name;
     private String status;
