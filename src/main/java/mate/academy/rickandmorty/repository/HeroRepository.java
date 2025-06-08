@@ -5,7 +5,7 @@ import mate.academy.rickandmorty.model.Hero;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-public interface HeroRepository extends JpaRepository<Hero, Integer> {
+public interface HeroRepository extends JpaRepository<Hero, Long> {
 
     Optional<Hero> findHeroByName(String name);
 
